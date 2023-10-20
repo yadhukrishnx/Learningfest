@@ -4,10 +4,71 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Re-directions</title>
-    <link rel="stylesheet" href="sample2.css">
+    <style>
+        body{
+    background-image: url(https://i.gifer.com/81mk.gif);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    flex-direction: column;
+    margin: 0px;
+}
+
+.main{
+    background-color: rgba(127, 255, 212, 0.850);
+    width: 40%;
+    height: 900px;
+    margin: 30px ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+}
+.inside{
+    
+    display: flex;
+    justify-content:flex-end;
+    align-items: flex-end;
+    
+    width: 100%;
+  
+    height :38px;
+    background-color: rgb(84, 84, 84);
+}
+#btn1{
+    border-radius: 10px;
+    background-color: rgba(14, 204, 234, 0.449);
+    padding: 8px;;
+}
+#btn2{
+    border-radius: 10px;
+    background-color: rgba(14, 234, 47, 0.449);
+padding: 8px;;
+}
+#btn3{
+    border-radius: 10px;
+    background-color: rgba(205, 234, 14, 0.619);
+padding: 8px;;
+}
+#btn4{
+    border-radius: 10px;
+    background-color: rgba(0, 194, 233, 0.86);
+padding: 8px;;
+}
+
+    </style>
+    <script>
+        function colors(col){
+            document.getElementById("main").style.background=col;
+        }
+        
+    </script>
 </head>
 <body>
-    <div class="main">
+    <div class="main" id="main">
         <h1 >Repository Map</h1>
         <list>
             <ol>
@@ -21,12 +82,16 @@
                 </ul>
             </ol>
         </list>
-        <!-- <div class="inside">
-
-        </div>
-        <div class="inside">
-
-        </div> -->
+        
+      
     </div>
+    <div class="inside">
+        <input type="button" value="Change color " id="btn1" onclick="colors('rgba(14, 204, 234, 0.850)')">
+        <input type="button" value="Change color " id="btn2" onclick="colors('rgba(14, 234, 47, 0.849)')">
+        <input type="button" value="Change color " id="btn3" onclick="colors('rgba(205, 234, 14, 0.850)')">
+        <input type="button" value="Change color " id="btn3" onclick="colors('rgba(0, 194, 233, 0.860)')">
+ 
+    </div>
+
 </body>
 </html>
