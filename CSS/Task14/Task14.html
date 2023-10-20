@@ -1,25 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <style>
-        .div1{
-            border: 1px solid rgb(185, 84, 84);
-            height: 20px;
-            width: 400px;
-            padding: 10px;
-        }
-    </style>
     <meta charset="UTF-8">
-    <title>Page title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+    width: 400px;
+    height: auto;
+    padding: 1%;
+    border: 1px solid rgb(0, 0, 0);
+    margin: 5px;
+}
+.main{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    /* flex-wrap: wrap;
+    align-content: flex-start; */
+}
+    </style>
+    
 </head>
 <body>
-    
-    <div class="div1">
-        <input type="radio" name="fav_language">Lorem ipsum dolor sit amet, consectetur adipiscing elit  
-    </div><br>
-     <div class="div1">  <input type="radio" name="fav_language">Lorem ipsum dolor sit amet, consectetur adipiscing elit</div><br>
-      <div class="div1">  <input type="radio" name="fav_language">Lorem ipsum dolor sit amet, consectetur adipiscing elit </div><br>
-       <div class="div1">  <input type="radio" name="fav_language">Lorem ipsum dolor sit amet, consectetur adipiscing elit </div>
+    <div class="main">
+        <dic class="box"><input type="radio" name="name" id=""><label for="name1">Lorem ipsum dolor sit amet consectetur</label></dic>
+        <dic class="box"><input type="radio" name="name" id=""><label for="name1">Lorem ipsum dolor sit amet consectetur</label></dic>
+        <dic class="box"><input type="radio" name="name" id=""><label for="name1">Lorem ipsum dolor sit amet consectetur</label></dic>
+        <dic class="box"><input type="radio" name="name" id=""><label for="name1">Lorem ipsum dolor sit amet consectetur</label></dic>
+    </div>
 </body>
-       
-  </html>
+</html>
