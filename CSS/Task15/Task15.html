@@ -1,97 +1,86 @@
-<html>
-
+<!DOCTYPE html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
     <style>
         body{
-  margin: 0;
-  padding: 0;
-  background-image: url('bg.png');
-  height: 500px;
+    background-image: url('https://spiffy-fire-8ed.notion.site/image/https%3A%2F%2Fprod-files-secure.s3.us-west-2.amazonaws.com%2F00607fab-2ebf-48a1-9db6-4b992ec36984%2Fa6ef9fae-ee41-48e3-a298-06f4ce87f407%2FUntitled.png?table=block&id=10c4829e-1539-41e8-835e-06df8d7c42a3&spaceId=00607fab-2ebf-48a1-9db6-4b992ec36984&width=2000&userId=&cache=v2');
   background-repeat: no-repeat;
-  background-size: cover;
-  display: flex;
-  justify-content: center;
   
-  
-}
-.f{
-  background-color: white;
-  width: 270px;
-  padding-left: 18px;
-  padding-right: 20px;
-  padding-top: 10px;
-  margin-top: 50%;
-  
-  border-radius: 1%;
-  
-}
-.i{
-  background-color: #f1f1f1;
-  border: none;
-  width: 266px;
-  border-radius: 50px;
-}
-h1{
-  font: bold;
-  font-size: 18px;
-  padding-left: 90px;
-  margin-bottom: 17px;
-}
+  width: 99%;
+  height: auto;
 
-.b{
-  background-color: #373b3e;
-  margin-bottom: 10px;
-  margin-top: 33px;
-  width: 266px;
-  color: white;
+  background-size:cover;
+background-position:center;
+display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.form{
+    width: 520px;
+    height: 730px;
+    margin: 50px;
+    background-color: rgba(255, 255, 255, 0.96);
+}
+.head{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-align: center;
+    font-size: 30px;
+    margin-top: 30px;
+}
+.cmd{
+    font-size: 20px;
+    
+    margin-left: 19px;
+    font-weight: 600;
+    
+}
+.inputbox{
+    width: 90%;
+    margin-left: 23px;
+    border-radius: 20px;
+    height: 30px;
+    border-style: none;
+    background: #e1e1e1ac;
+    margin-bottom: 24px;
+    padding: 4px;
+}
+.rgt{
+    width: 90%;
+    margin-left: 23px;
+    height: 40px;
+    border-style: none;
+    color: rgb(255, 255, 255);
+    background: #3b3b3bac;
+    
 }
     </style>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
- 
-  <title></title>
-
+    
 </head>
-
 <body>
-<div>
-  
+   <div class="form">
+        <h1 class="head">Sign Up</h1><hr style="width: 90%; " size="4px" color="lightgrey" ><br>
+        <label for="fname"><span class="cmd">First name</span></label><br><input type="text" name="fname" id="#" class="inputbox" value="  Enter First name">
+        <label for="fname"><span class="cmd" >Last name</span></label><br><input type="text" name="lname" id="#" class="inputbox"  value="  Enter Last name" >
+        <label for="fname"><span class="cmd" >Date of Birth</span></label><br><input type="date" name="lname" id="#" class="inputbox" >
+        <label for="fname"><span class="cmd" >Enter email</span></label><br><input type="email" name="lname" id="#" class="inputbox"value="Enter Email" >
+        <label for="fname"><span class="cmd" >Enter password</span></label><br><input type="password" name="lname" id="#" class="inputbox" >
+        <label for="fname"><span class="cmd" >Confirm password</span></label><br><input type="password" name="lname" id="#" class="inputbox"  >
+        <hr style="width: 90%; " size="4px" color="lightgrey"><br>
+        <input type="submit" value="Register" class="rgt" onclick="fun()">
+        <script>
+            function fun(){
+                alert("Successfully Registered")
+            }
+        </script>
+        
 
- <form action="" class="f">
-   
-   <h1>Sign Up</h1>
-   
-   <label for="fname" class="1">First Name</label><br>
-   
-   <input style="margin-bottom: 9px" type="text" name="" id="" placeholder="Enter name" class="i"><br>
-   
-   <label for="lname" class="1">Last Name</label><br>
-   
-   <input style="margin-bottom: 9px" type="text" name="" id="i" placeholder="Enter name" class="i"><br>
-   
-   <label for="dob" class="1">Date of Birth</label><br>
-   
-   
-   <input style="margin-bottom: 9px;text-decoration: none;" placeholder="dd/mm/yyyy" type="date" class="l i" ><br>
-
-   
-   
-   <label for="email" class="1">Email</label><br>
-   
-   <input style="margin-bottom: 9px" type="email" placeholder="Enter email" name="" id="" class="i"><br>
-   
-   <label for="password" class="1">Password</label><br>
-   
-   <input style="margin-bottom: 9px" type="password" placeholder="Enter password" name="" id="" class="i"><br>
-   
-   <label for="cpass" class="1">Confirm Password</label><br>
-   
-   <input type="password" name="" id="" class="i" placeholder="Repeat password"><br>
-   
-   <button class="b" type="submit">Register</button>
- </form>
-</div>
+        
+   </div>
+    
 </body>
-
-
-  </html>
+</html>
