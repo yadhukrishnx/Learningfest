@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link href='https://fonts.googleapis.com/css?family=Baloo Thambi 2' rel='stylesheet'>
+    <title>Digital Dice</title>
+    <style>
+
+body {
+    font-family: 'Baloo Thambi 2';font-size: 22px;
+}
+.btn{
+    border: 1px solid rgb(0, 255, 42);
+    margin-top: 20px;
+    width: 300px;
+    height: 40px;
+    font-size: larger;
+    font-family: Audiowide;
+    background:linear-gradient(180deg, rgb(98, 94, 94), rgb(196, 196, 196));
+    color:rgb(255, 255, 255)
+
+
+}
+.sec2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+    </style>
+</head>
+<body>
+    <!--.....................Header...................-->
+    <header  >
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top bg-body-tertiary topbar">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img src="4.png" alt="Logo" width="35" height="34" class="d-inline-block align-text-top ">
+            Digital Dice
+          </a>
+        
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+             
+              <button class="navbar-toggler ml-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon "></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#section1">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#sec2">Roller</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#section3">Support</a>
+                    </li>
+                    
+                </ul>
+            </div>
+            </div>
+          </nav>
+        </div>
+
+      </nav>
+      </header>
+      <div id="section1">
+
+
+      <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="https://picsum.photos/1000/160?blur" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="https://picsum.photos/1000/159?blur" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="https://picsum.photos/1000/161?blur" class="d-block w-100" alt="...">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container-lg p-5 " style="margin-top: 40px;">
+        <h2 class="text-center">About the App</h2><br>
+        <p class="text-center" >"Unveiling 'Digital Dice': Your Epic Gateway to the World of Random Dice Rolling! Prepare to be captivated by our expansive webpage, meticulously crafted with the enchantment of JavaScript, HTML, and CSS. Immerse yourself in the exhilarating world of chance, where every click opens up a universe of surprises, games, and boundless amusement.. Whether you're a tabletop gamer, a decision-maker, or just a fan of randomness, our webpage will become your go-to source for all things dice-related. Embrace the thrill of uncertainty and embark on a journey of endless possibilities. Join us and let the dice shape your destiny in this vast realm of randomness and adventure!"</p>
+
+
+    </div>
+</div>
+
+    <!-- ..................................... -->
+    <div id="sec2">
+        <div class="container-lg p-5 sec2 " style="margin-top: 40px;">
+
+
+
+            <hr><br>
+            <br>
+          <h1 style="text-align: center;" >Dice</h1>
+          
+            <img id="diceimg"  alt="Failed to load Dice " src="4.png"><h1 style="text-align: center;" id="num"></h1><br>
+
+            
+            
+          <input type="button" value="Roll Dice" onclick="roll()" class="btn">
+
+        </div>
+
+    </div>
+
+
+    <!--.........-->
+    <br><br><br><br><br>
+
+      
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+    <script>
+
+       
+        function roll(){
+             var randomnum=Math.floor(Math.random() * 6)+1;
+            document.getElementById("num").innerHTML=randomnum;
+            if(randomnum==1){
+                document.getElementById("diceimg").src="1.png";
+            }
+            if(randomnum==2){
+                document.getElementById("diceimg").src="2.png";
+            }
+            if(randomnum==3){
+                document.getElementById("diceimg").src="3.png";
+            }
+            if(randomnum==4){
+                document.getElementById("diceimg").src="4.png";
+            }
+            if(randomnum==5){
+                document.getElementById("diceimg").src="5.png";
+            }
+            if(randomnum==6){
+                document.getElementById("diceimg").src="6.png";
+            }
+        }
+
+        window.onscroll = () => {
+    if(window.scrollY > 300) {
+        document.getElementsByClassName("topbar")[0].style.height = '60px';
+        document.getElementsByClassName("topbar")[0].style.background = 'rgb(10, 90, 130)';
+    }else {
+        document.getElementsByClassName("topbar")[0].style.height = '100px';
+        document.getElementsByClassName("topbar")[0].style.background = 'none';
+    }
+}
+
+
+    </script>
+    
+</body>
+</html>

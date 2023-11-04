@@ -1,0 +1,45 @@
+       .{
+            margin: 0;
+            padding: 0;
+            box-sizing:border-box;
+
+        }
+        body{
+            background: linear-gradient(90deg,rgba(2,0,36,1) 0% , rgb(7, 189, 217) 35% ,rgb(81, 228, 8) 100% );
+        }
+        form{
+            width: 24%;
+            padding: 50px;
+            background-color: rgb(255, 255, 255);
+            margin-top: 150px;
+            border-radius: 20px;
+        }
+        .btn-primary{
+            width: 100%;
+            border: none;
+            background: linear-gradient(90deg,rgba(2,0,36,1) 0% ,rgb(162, 8, 228,1) 35% , rgb(15, 217, 248,1) 100%  );
+            border-radius: 20px;
+            margin-top: 10px;
+        }
+        .form-control{
+            color: rgb(0, 0, 0);
+            border-bottom-color: rgba(0, 0, 0, 0.46);
+            box-shadow: none !important;
+            border:none;
+            border-bottom: 1px solid;
+            border-radius: 4px 4px 0 0;
+        }
+        h4{
+            font-size: 2rem !important;
+            font-weight: 700;
+        }
+        .form-label{
+            font-family: 700 !important;
+        }
+        
+        @media only screen and (max-width: 600px) {
+
+            form {
+                width: 100% important;
+            }
+        }

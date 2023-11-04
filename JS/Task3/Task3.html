@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <title>EMI CALCULATOR</title>
+    <style>
+        
+        .inputbox{
+            width: 20em;
+            height: 40px;
+            background-color: rgba(0, 0, 0, 0.185);
+            border-radius: 10px;
+        }
+
+    </style>
+</head>
+<body >
+    
+    <div class="container p-5 " style="display: flex; align-items: center; flex-direction: column; background-color: bisque; width: 38em; height: 41em; margin-top: 4%;">
+    <h1 class="text-center p-5" >EMI CALCULATOR </h1>
+    <label for="amount" >Enter the amount</label> 
+    <input type="number" name="amount" id="amount2" class="inputbox" oninput="clr()">
+    <label for="interest">Enter the Interest rate </label>
+    <input type="number" name="interest" id="interest2" class="inputbox" oninput="clr()">
+    <label for="time">Enter the Time period as years</label>
+    <input type="number" name="time" id="time2" class="inputbox" oninput="clr()"><br>
+    <input type="button" value="Calculate EMI " class="btn btn-outline-secondary" onclick="emmi()"><br>
+    <h3 id="emi">EMI : </h3>
+    <h3 id="totalint">Total interest : </h3>
+    <h3 id="totalpr">Total Payable/Receivable : </h3>
+
+
+
+    </div>
+
+
+<script>
+     
+    
+
+function emmi(){
+     
+    var emi=0;
+    emi=0;
+    interest=0;
+    var amount=Number(document.getElementById("amount2").value);
+    var interest=Number(document.getElementById("interest2").value);
+    var time=Number(document.getElementById("time2").value);
+   interest =interest / (12 * 100);
+    time = time * 12;
+    emi = (amount * interest * Math.pow(1 + interest, time)) / (Math.pow(1 + interest, time) - 1);
+    
+    var totalint= ( emi*time)-amount;
+    var totalpr=amount + totalint;
+
+    
+    
+    document.getElementById("emi").innerHTML+=emi;
+    document.getElementById("totalint").innerHTML+=totalint;
+    document.getElementById("totalpr").innerHTML+=totalpr;
+
+}
+function clr(){
+    emi=0;
+    totalint=0;
+    totalpr=0;
+    document.getElementById("emi").innerHTML="EMI : ";
+    document.getElementById("totalint").innerHTML="Total interest : ";
+    document.getElementById("totalpr").innerHTML="Total Payable/Receivable : ";
+
+}
+
+</script>
+
+</body>
+</html>
