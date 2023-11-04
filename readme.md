@@ -16,7 +16,7 @@ This is a simple HTML page with redirection links and a dynamic appearance.
    - [Final Task](https://yadhukrishnx.github.io/Learningfest/BOOTSTRAP/Task6/index.html)
 4. javaScript
    - [Final Task](https://yadhukrishnx.github.io/Learningfest//JS/FINAL%20PROJECT/personal-webpage/index.html)
-   - [Dice roller](https://yadhukrishnx.github.io/Learningfest//JS/Task1/index.html)
-   - [EMI Calculator](https://yadhukrishnx.github.io/Learningfest//JS/Task2/index.html)
+   - [Dice roller](https://yadhukrishnx.github.io/Learningfest//JS/Task1/Task1.html)
+   - [EMI Calculator](https://yadhukrishnx.github.io/Learningfest//JS/Task2/Task2.html)
 
 ---
